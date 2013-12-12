@@ -24,7 +24,7 @@ int lonelyinteger(vector < int > a) {
 		value = a[i];
 		unique = true;
 		for(int j=0; j<a.size() & unique; j++){
-			if(a[j]==value)
+			if(a[j]==value & i!=j)
 				unique = false;
 
 		}
@@ -51,6 +51,7 @@ int main() {
     
     res = lonelyinteger(_a);
     cout << res;
+    cout << endl;
     
     return 0;
 }
